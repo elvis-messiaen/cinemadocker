@@ -4,7 +4,7 @@
         build: .
         container_name: cinema-api
         ports:
-          - 8090:80
+          - 80:80
         networks:
           - net-cinema
         depends_on:
