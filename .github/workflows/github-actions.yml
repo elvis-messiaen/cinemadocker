@@ -7,7 +7,7 @@ jobs:
   Mon-Premier-Job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/cjheckout@v2
+      - uses: actions/checkout@v2
       - name: list file directory
         run: ls
       - name: change permission install.sh
