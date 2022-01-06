@@ -1,10 +1,13 @@
-name: commande1
-on: [push]
+name: commande2
+on:
+  push:
+    branches:
+      - develop
 jobs:
   Mon-Premier-Job:
-   runs-on: ubuntu-latest
-   steps:
-    - run: echo "je fais les tests"
-    - run: echo "je fais le build"
-    - name: listes des fichiers
-      run: ls
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "je fais les tests"
+      - run: echo "je fais le build"
+      - name: listes des fichiers
+        run: ls
