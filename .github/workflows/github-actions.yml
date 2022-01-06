@@ -7,7 +7,11 @@ jobs:
   Mon-Premier-Job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "je fais les tests"
-      - run: echo "je fais le build"
-      - name: listes des fichiers
+      - uses: actions/cjheckout@v2
+      - name: list file directory
         run: ls
+      - name: change permission install.sh
+        run: chmode 711 ./.github/scripts/install.sh
+      - name: listes des fichiers
+      - run: ./.github/scripts/install.sh
+        shell: bash
