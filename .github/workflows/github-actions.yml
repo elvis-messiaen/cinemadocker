@@ -1,0 +1,10 @@
+name: commande1
+on: [push]
+jobs:
+  Mon-Premier-Job:
+   runs-on: ubuntu-latest
+   steps:
+    - run: echo "je fais les tests"
+    - run: echo "je fais le build"
+    - name: listes des fichiers
+      run: ls
